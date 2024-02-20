@@ -1,0 +1,219 @@
+#hero {
+    height: 100vh;
+    background-image: url(first.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(255, 238, 238);
+}
+
+#hero .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#hero .container .leftDiv {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#hero .container .rightDiv {
+    align-items: right;
+    width: 50%;
+}
+
+.leftDiv .welcome {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 5rem;
+    font-weight: bolder;
+    
+}
+
+.leftDiv .org_name {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 5rem;
+    margin-top: 1px;
+}
+
+.leftDiv .org_subname {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    margin-top: 0px;
+}
+
+.leftDiv .org_subname span {
+    color: green;
+}
+
+.leftDiv .content {
+    font-family: 'Times New Roman', Times, serif;   
+    margin-top: 5rem;
+    font-size: 3rem;
+}
+
+.leftDiv .buttons {
+    margin-top: 5rem;
+}
+
+.leftDiv .buttons #join_btn {
+    border: var(--color-black);
+    padding: 2rem 5rem;
+    border-radius: 100px;
+    color: yellowgreen;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5rem;
+    margin-right: 3rem;
+}
+
+.leftDiv .buttons #join_btn:hover {
+    background-color: green;
+    color: var(--color-black);
+}
+
+.leftDiv .buttons #contact_btn {
+    background-color: aliceblue;
+    padding: 1rem 5rem;
+    border-radius: 100px;
+    color: rgb(7, 7, 7);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.leftDiv .buttons #contact_btn:hover {
+    background-color: blue;
+    color: var(--color-black);
+}
+
+@media (max-width: 1669px) {
+    #hero .container .rightDiv {
+        width: 35%;
+    }
+
+    .leftDiv .welcome {
+        font-size: 2rem;
+    }
+
+    .leftDiv .org_name {
+        font-size: 5rem;
+    }
+
+    .leftDiv .org_subname {
+        font-size: 2.5rem;
+    }
+
+    .leftDiv .content {
+        font-size: 1rem;
+    }
+
+    .leftDiv .buttons #join_btn {
+        margin-right: 1rem;
+    }
+}
+
+@media (max-width: 1440px) {
+
+    .leftDiv .buttons #join_btn {
+        margin-right: 1rem;
+        padding: 1rem 2rem;
+    }
+
+    .leftDiv .buttons #contact_btn {
+        padding: 1rem 2rem;
+    }
+}
+
+@media (max-width: 1210px) {
+    .leftDiv .org_name {
+        font-size: 6rem;
+    }
+
+}
+
+@media (max-width: 1150px) {
+    .about_leftDiv .about_title {
+        font-size: 2rem;
+    }
+
+    .about_leftDiv .content {
+        font-size: 0.9rem;
+    }
+
+    .about_leftDiv .icons img {
+        width: 50px;
+    }
+}
+
+@media (max-width: 992px) {
+    #hero .container .leftDiv {
+        width: 100%;
+        padding: 3rem;
+    }
+
+    #hero .container .rightDiv {
+       display: none;
+    }
+
+    .leftDiv .org_name {
+        font-size: 4rem;
+    }
+
+    .leftDiv .org_subname {
+        font-size: 2rem;
+    }
+
+    .leftDiv .content {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 694px) { 
+    .leftDiv .org_name {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 576px) { /********* PHONE *********/
+    #hero .container .leftDiv {
+        margin-top: 3rem;
+        align-items: flex-start;
+    }
+
+    .leftDiv .welcome {
+        font-size: 1.3rem;
+    }
+
+    .leftDiv .org_name {
+        font-size: 3rem;
+    }
+
+    .leftDiv .org_subname {
+        font-size: 1.5rem;
+    }
+
+    .leftDiv .content {
+        font-size: 0.9rem;
+        margin-top: 2rem;
+    }
+
+    .leftDiv .buttons {
+        display: flex;
+        margin-top: 2rem;
+    }
+
+    .leftDiv .buttons #join_btn {
+        padding: 1rem;
+        font-size: 1rem;
+        text-align: center;
+    }
+    .leftDiv .buttons #contact_btn {
+        padding: 1rem 1rem;
+        font-size: 1rem;
+        text-align: center;
+    }
+}
